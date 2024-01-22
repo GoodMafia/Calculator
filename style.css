@@ -1,0 +1,74 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 50px;
+  background-color: #f8f9fa; /* Более светлый цвет фона */
+}
+
+h1 {
+  color: #495057; /* Цвет текста заголовка */
+}
+
+input, button {
+  font-size: 24px;
+  margin: 5px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input {
+  width: 200px;
+  font-size: 36px;
+  border: 2px solid #ced4da; /* Нейтральный цвет границы */
+  background-color: #f0f0f0; /* Более светлый цвет фона */
+  color: #495057; /* Цвет текста */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+ 
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background-color: #6c757d; /* Нейтральный цвет кнопок */
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #495057; /* Темнее при наведении */
+}
+
+button.operation {
+  background-color: #dc3545; /* Цвет операторов */
+}
+
+button.operation:hover {
+  background-color: #c82333; /* Темнее при наведении */
+}
+
+button.equals {
+  background-color: #ffc107; /* Цвет равно */
+}
+
+button.equals:hover {
+  background-color: #e0a800; /* Темнее при наведении */
+}
+
+button.clear {
+  background-color: #28a745; /* Цвет очистки */
+}
+
+button.clear:hover {
+  background-color: #218838; /* Темнее при наведении */
+}

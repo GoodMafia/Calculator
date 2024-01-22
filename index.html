@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Калькулятор</title>
+</head>
+
+<body>
+
+  <h1>Калькулятор</h1>
+
+  <div>
+    <input type="text" id="display" readonly>
+  </div>
+
+  <div id="buttons" onclick="calculator.handleButtonClick(event)">
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button onclick="calculator.calculate(); setOperation('+')">+</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button onclick="calculator.calculate(); calculator.setOperation('-')">-</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button onclick="calculator.calculate(); calculator.setOperation('*')">*</button>
+    <button>0</button>
+    <button onclick="calculator.clear()">C</button>
+    <button onclick="calculator.calculate()">=</button>
+    <button onclick="calculator.calculate(); calculator.setOperation('/')">/</button>
+  </div>
+
+
+</body>
+
+</html>
